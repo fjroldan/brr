@@ -20,8 +20,8 @@ public class CommonUtil {
 
         // Format private key
         privateKeyContent =
-                privateKeyContent.replaceAll("\\R", "").replace("***REMOVED***", "").replace("***REMOVED***"
-                        + "***REMOVED***", "");
+                privateKeyContent.replaceAll("\\R", "").replace("-----BEGIN RSA PRIVATE KEY-----", "").replace("-----END RSA "
+                        + "PRIVATE KEY-----", "");
         KeyFactory kf = KeyFactory.getInstance("RSA");
         PKCS8EncodedKeySpec keySpecPKCS8 = new PKCS8EncodedKeySpec(
                 Base64.getDecoder().decode(privateKeyContent));
