@@ -3,3 +3,5 @@ commit 7
 I change it from develop
 
 I do two change
+
+First test merge
